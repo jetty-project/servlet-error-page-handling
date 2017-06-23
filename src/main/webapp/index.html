@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>error-page demo</title>
+    <link rel="stylesheet" type="text/css" href="main.css" title="Style">
+</head>
+<body>
+<h1>error-page demos:</h1>
+
+<table cellspacing="10">
+    <tr>
+        <td><a href="thrown-custom" class="path">/thrown-custom</a></td>
+        <td>a CustomException is thrown from Servlet</td>
+    </tr>
+    <tr>
+        <td><a href="filter-thrown-custom/a.hello" class="path">/filter-thrown-custom/a.hello</a></td>
+        <td>a CustomException is thrown from Filter</td>
+    </tr>
+    <tr>
+        <td><a href="thrown-default" class="path">/thrown-default</a></td>
+        <td>a ServletException is thrown from Servlet</td>
+    </tr>
+    <tr>
+        <td><a href="filter-thrown-default/a.hello" class="path">/filter-thrown-default/a.hello</a></td>
+        <td>a ServletException is thrown from Filter</td>
+    </tr>
+    <tr>
+        <td><a href="send-error/404" class="path">/send-error/404</a></td>
+        <td>a sendError(404) NOT_FOUND is used by Servlet</td>
+    </tr>
+    <tr>
+        <td><a href="send-error/503" class="path">/send-error/503</a></td>
+        <td>a sendError(503) SERVICE_UNAVAILABLE is used by Servlet</td>
+    </tr>
+</table>
+</body>
+</html>
